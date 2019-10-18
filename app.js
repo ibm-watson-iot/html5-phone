@@ -20,7 +20,7 @@ var express = require('express'),
     http = require('http'),
     https = require('https');
 var app = express();
-var Cloudant = require('cloudant');
+var Cloudant = require('@cloudant/cloudant');
 
 if (process.env.VCAP_SERVICES) {
 	var env = JSON.parse(process.env.VCAP_SERVICES);
